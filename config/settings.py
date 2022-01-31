@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['*']  # bingemanapi.herokuapp.com
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'bingeman_backend.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings'
 
 # Application definition
 
@@ -129,7 +129,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-ROOT_URLCONF = 'bingeman_backend.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -149,8 +149,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'bingeman_backend.wsgi.application'
-ASGI_APPLICATION = 'bingeman_backend.asgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
+ASGI_APPLICATION = 'config.asgi.application'
 
 
 # Database

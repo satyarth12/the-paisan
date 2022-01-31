@@ -5,9 +5,9 @@ from celery import Celery
 from django.conf import settings
 # from celery.schedules import crontab  ## for allocating a periodic task
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bingeman_backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 
-app = Celery('bingeman_backend')
+app = Celery('config')
 app.conf.enable_utc = False
 app.conf.update(timezone='Asia/Kolkata')
 

@@ -1,5 +1,5 @@
 """
-ASGI config for bingeman_backend project.
+ASGI config for config project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/asgi/
 
 # from django.core.asgi import get_asgi_application
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bingeman_backend.settings')
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 
 # application = get_asgi_application()
 
@@ -23,7 +23,7 @@ from django.core.asgi import get_asgi_application
 from notifications.routing import websocket_urlpatterns
 from notifications.authmiddleware import TokenAuthMiddleware
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bingeman_backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 
 application = ProtocolTypeRouter({
     "http": get_asgi_application(),
