@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn bingeman_backend.wsgi --log-file -
+web: gunicorn config.wsgi --log-file -
